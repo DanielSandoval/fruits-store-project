@@ -1,0 +1,57 @@
+body {
+    display: grid;
+    background-color: aquamarine;
+}
+
+.login-container {
+    display: grid;
+}
+
+#main-title {
+    text-align: center;
+    font-size: 3.5em;
+}
+
+.input-text-container {
+    display: grid;
+}
+
+input {
+    font-size: 1.5em;
+}
+
+#buttons-container {
+    display: grid;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        grid-template-columns: auto;
+    }
+
+    .login-container {
+        grid-template-columns: auto;
+    }
+
+    .input-text-container {
+        grid-template-columns: auto;
+    }
+
+    #buttons-container {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        grid-template-columns: auto auto auto auto auto auto auto auto;
+    }
+
+    .login-container {
+        grid-column: 4 / 6;
+    }
+
+    #buttons-container {
+        grid-template-columns: auto auto;
+    }
+}

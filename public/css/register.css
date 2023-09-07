@@ -1,0 +1,41 @@
+body {
+    background-color: aquamarine;
+    display: grid;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5em;
+}
+
+.register-form {
+    display: grid;
+}
+
+input {
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        grid-template-columns: repeat(8, auto);
+    }
+
+    .register-container {
+        grid-column: 4 / 6;
+    }
+
+    .register-form {
+        grid-template-columns: auto auto;
+    }
+
+    .input-text {
+        grid-column: 1 / 3;
+    }
+}

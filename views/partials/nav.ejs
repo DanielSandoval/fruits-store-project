@@ -1,0 +1,15 @@
+<nav>
+    <a href="/">Fruitland</a>
+    <ul>
+        <li><a href="/">Main</a></li>
+        <li><a href="/about">About</a></li>
+        <% if(user && user.role == 'user') { %>
+            <li><a href="/api/cart">Cart</a></li>
+        <% } %>
+        <li><a href="/chat">Customer service or Support</a></li>
+        <% if(user) { %>
+            <li><a href="/logout">Logout</a></li>
+            <li id="user-nav"><%= user.name + ' ' + user.lastname %></li>
+        <% } %>
+    </ul>
+</nav>

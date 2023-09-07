@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head'); %>
+    <title>Chat</title>
+    <link rel="stylesheet" href="css/nav.css" type="text/css">
+    <link rel="stylesheet" href="css/chat.css" type="text/css">
+</head>
+<body>
+    <%- include('./partials/nav'); %>
+    <div id="container">
+        <div id="users-list-area">
+            <h4 id="users-count-number"></h4>
+            <ul id="user-list-ul"></ul>
+        </div>
+        <div id="messages-area">
+            <h3 id="current-chat">SELECT A USER TO CHAT</h3>
+            <div id="messages"></div>
+        </div>
+        <div id="text-area">
+            <form action="/chat/send-message" method="post" id="chat-form">
+                <div id="textarea-area">
+                    <textarea name="message" placeholder="Write your message..." id="message-text-box" form="chat-form"></textarea>
+                </div>
+                <div id="submit-text-area">
+                    <input type="submit" value="Send" id="submit-text-button">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="chat-public.js"></script>
+</body>
+</html>

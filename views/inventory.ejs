@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head'); %>
+    <title>Fruitland | Inventory</title>
+    <link rel="stylesheet" href="/css/nav.css" type="text/css">
+</head>
+<body>
+    <%- include('./partials/nav'); %>
+    <br>
+    <main>
+        <h1>Inventory</h1>
+        <form action="/api/inventory/set-default-data">
+            <input type="submit" value="Set default inventory">
+        </form>
+        <br>
+        <hr>
+        <h3>Edit products</h3>
+        <form action="/api/inventory" method="post">
+            <select name="fruit" id="fruits-list">
+                <option selected>Select your option</option>
+                <% if(acceptedFruits) { acceptedFruits.forEach(function(fruit) { %>
+                    <option><%= fruit %></option>
+                <% })}; %>
+            </select>
+            <input type="number" placeholder="Price" name="price">
+            <input type="number" placeholder="Existence" name="existence">
+            <input type="submit" value="Submit">
+        </form>
+
+        <div class="products-container">
+            <div>
+                <p><% inventoryProducts %></p>
+                <% if(inventoryProducts) { inventoryProducts.forEach(function(user) { %>
+                    <p>Product: <%= user.product.productName %></p>
+                    <p>Price: <%= user.product.price %></p>
+                    <p>Existence: <%= user.existence %></p>
+                    <br>
+                <% });} %>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

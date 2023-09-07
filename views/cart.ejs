@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head'); %>
+    <title>Cart</title>
+    <link rel="stylesheet" href="/css/nav.css" type="text/css">
+</head>
+<body>
+    <%- include('./partials/nav'); %>
+    <% userCart.forEach(function(cartItem) {%>
+        <p>Product: <%- cartItem.product.productName %></p>
+        <p>Price: <%- cartItem.product.price %></p>
+        <p>Quantity: <%- cartItem.quantityBuy %></p>
+        <br>
+    <% }); %>
+    <div>
+        <form action="/api/cart-history/submit-payment" method="post">
+            <input type="submit" name="purchase" value="Purchase">
+        </form>
+        <br>
+        <form action="/api/cart/delete-cart" method="get">
+            <input type="submit" name="deleteCart" value="Delete Cart">
+        </form>
+    </div>
+</body>
+</html>

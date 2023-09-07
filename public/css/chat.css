@@ -1,0 +1,111 @@
+/*BODY*/
+html, body {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    margin-top: 0%;
+}
+/*END-BODY*/
+
+/*CONTAINER*/
+#container {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    flex-grow: 1; /*After this is test*/
+    height: 100vh;
+}
+/*END CONTAINER*/
+
+/*USER-LIST*/
+#users-list-area {
+    background-color: bisque;
+    grid-row: 1; /*After this is test*/
+    overflow: auto;
+}
+
+#users-count-number {
+    text-align: center;
+}
+
+/*#user-list-ul {/*Test*/
+    /*overflow: scroll;
+}*/
+/*END USER-LIST*/
+
+/*MESSAGES-AREA*/
+#messages-area {
+    background-color: azure;
+    grid-row: 2 / 5;
+    overflow: auto;
+}
+
+/*#messages {
+    height: 100%;
+}*/
+/*END-MESSAGES-AREA*/
+
+/*TEXT-AREA*/
+#text-area {
+    background-color: cadetblue;
+    grid-row: 5;
+}
+
+#text-area form {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+}
+
+#text-area form #textarea-area {
+    grid-row: 1 / 3;
+    display: grid;
+    margin-bottom: 0;
+}
+
+#text-area form #submit-text-area {
+    display: grid;
+    grid-row: 3;
+    margin-top: 0;
+}
+
+#text-area form #textarea-area #write-text-box {
+    resize: none;
+}
+/*END-TEXT-AREA*/
+
+@media screen and (min-width: 768px) {
+    /*CONTAINER*/
+    #container {
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
+    }
+    /*END CONTAINER*/
+
+    /*USER-LIST*/
+    #users-list-area {
+        grid-column: 1;
+        grid-row: 1 / 6;
+    }
+    /*END USER-LIST*/
+
+    /*MESSAGES-AREA*/
+    #messages-area {
+        grid-column: 2 / 6;
+        grid-row: 1 / 5;
+    }
+
+    #messages-area #current-chat {
+        text-align: center;
+    }
+    /*END-MESSAGES-AREA*/
+
+    /*TEXT-AREA*/
+    #text-area {
+        grid-column: 2 / 6;
+        grid-row: 5 / 6;
+    }
+    /*END-TEXT-AREA*/
+}

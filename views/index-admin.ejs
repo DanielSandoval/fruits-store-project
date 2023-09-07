@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head'); %>
+    <title>Index | Main Page Administrator</title>
+    <link rel="stylesheet" href="css/nav.css" type="text/css">
+</head>
+<body>
+    <%- include('./partials/nav'); %>
+    <main class="main-container">
+        <h1>YOU ARE IN ADMIN MODE</h1>
+        <p>As you are in administrator mode you have special permissions such as creating other administrator role user accounts and being able to review and modify the inventory.</p>
+        <hr/>
+        <form action="/api/inventory" method="get">
+            <h3>You can go to the Inventory</h3>
+            <input type="submit" name="Go to Inventory" value="Go to Inventory">
+        </form>
+        <hr/>
+        <h3>Create an administrator role user account</h3>
+        <form action="/register" method="post">
+            <div>
+                <input type="email" name="username" placeholder="Username (email)">
+            </div>
+            <div>
+                <input type="text" name="name" placeholder="Name">
+            </div>
+            <div>
+                <input type="text" name="lastname" placeholder="Lastname">
+            </div>
+            <div>
+                <input type="password" name="password" placeholder="Password">
+            </div>
+            <div>
+                <input type="password" name="confirmPassword" placeholder="Confirm Password">
+            </div>
+            <div>
+                <input type="text" name="role" placeholder="Role" value="admin" readonly>
+            </div>
+            <div>
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
