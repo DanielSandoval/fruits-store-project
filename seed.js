@@ -1,6 +1,6 @@
 // THE PORPOUSE OF THIS FILE IS TO FILL THE DATABASE WITH INITIAL INFORMATION
 
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const userModel = require('./models/user.model');
 const inventoryModel = require('./models/inventory.model');
 const productModel = require('./models/product.model');

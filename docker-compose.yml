@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  mongo_db:
+    container_name: db_container
+    image: mongo:5
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo_db:/data/db
+  
+  api:
+    build: .
+    ports:
+      - "${PORT}:${PORT}"
+    volumes:
+      - .:/app
+    environment:
+      - MONGO_URI=${MONGO_URI}
+      - SESSION_SECRET=${SESSION_SECRET}
+      - PORT=${PORT}
+    depends_on:
+      - mongo_db
+
+volumes:
+  mongo_db:

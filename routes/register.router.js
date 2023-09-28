@@ -1,5 +1,5 @@
 const express = require('express');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const User = require('../models/mongo_models/user.mongo');
 const userModel = require('../models/user.model');
 const registerRouter = express.Router();
