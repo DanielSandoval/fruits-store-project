@@ -16,6 +16,7 @@ services:
       - "${PORT}:${PORT}"
     volumes:
       - .:/app
+      - /app/node_modules # This line prevents it from using host dependencies
     environment:
       - MONGO_URI=${MONGO_URI}
       - SESSION_SECRET=${SESSION_SECRET}
