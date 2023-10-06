@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const passport = require('passport');
 const session = require('express-session');
 const cors = require('cors');
+const path = require('path');
 
 const app = express();
 const http = require('http').createServer(app);
@@ -93,7 +94,7 @@ http.listen(process.env.PORT, function() {
 app.set('view engine', 'ejs');
 
 // static files
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname + '/public')));
 
 // routing
 app.use('/', indexRouter);
