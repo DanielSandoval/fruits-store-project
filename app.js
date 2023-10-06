@@ -91,13 +91,13 @@ http.listen(process.env.PORT, function() {
 });
 
 // set view
-app.set('views', path.join(__dirname + '/views'));
+app.set('views', path.join(__dirname, 'views'));
 
 // set ejs
 app.set('view engine', 'ejs');
 
 // static files
-app.use(express.static(path.join(__dirname + '/public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // routing
 app.use('/', indexRouter);
