@@ -90,6 +90,9 @@ http.listen(process.env.PORT, function() {
     console.log('Listening on port 3000');
 });
 
+// set view
+app.set('views', path.join(__dirname + '/views'));
+
 // set ejs
 app.set('view engine', 'ejs');
 
