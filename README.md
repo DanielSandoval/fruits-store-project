@@ -22,14 +22,14 @@
   - `w@w` with the password `123` (`user` type).
 
 ##### 3. User Actions:
-  - User Type `user`:
-    - Add products to the shopping cart.
-    - Clear the shopping cart.
-    - Complete purchases.
+- User Type `user`:
+  - Add products to the shopping cart.
+  - Clear the shopping cart.
+  - Complete purchases.
 
-  - User Type `admin`:
-      - A default product inventory is automatically established upon initiation. `admin` accounts have the capability to reset the inventory to its default state.
-      - `admin`-type accounts can only be created by other `admin`-type accounts.
-      - `admin`-type users have the authority to update and modify the product inventory.
+- User Type `admin`:
+  - A default product inventory is automatically established upon initiation. `admin` accounts have the capability to reset the inventory to its default state.
+  - `admin`-type accounts can only be created by other `admin`-type accounts.
+  - `admin`-type users have the authority to update and modify the product inventory.
 
 ##### 4. Customer Service or Support:
