@@ -10,6 +10,6 @@
 ### Testing Instructions:
 
 #### User Authentication:
--All endpoints require user authentication.
--Users log in with their email and password.
--The system identifies the user type and presents content accordingly.
+- All endpoints require user authentication.
+- Users log in with their email and password.
+- The system identifies the user type and presents content accordingly.
