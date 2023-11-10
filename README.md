@@ -32,7 +32,8 @@
   - `admin`-type accounts can only be created by other `admin`-type accounts.
   - `admin`-type users have the authority to update and modify the product inventory.
 
-##### 4. Customer Service or Support:
+##### 4. Real-Time Chat Support:
 - Users can access the chat room to communicate with connected users.
 - Users can choose which user to chat with and engage in real-time conversations.
 - Chat history is accessible to review past messages exchanged in the chat room.
+- The list of connected users is dynamically updated as users join or leave the chat room.
