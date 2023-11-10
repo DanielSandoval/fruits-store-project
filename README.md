@@ -26,3 +26,6 @@
     - Add products to the shopping cart.
     - Clear the shopping cart.
     - Complete purchases.
+
+  - User Type `admin`:
+      - `admin`-type accounts can only be created by other `admin`-type accounts.
