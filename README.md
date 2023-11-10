@@ -8,3 +8,8 @@
 2. I created a real-time chat application using WebSockets and Node.js. Users can join chat rooms, send messages, and view real-time updates. This application showcases my skills in real-time web development.
 
 ### Testing Instructions:
+
+#### User Authentication:
+-All endpoints require user authentication.
+-Users log in with their email and password.
+-The system identifies the user type and presents content accordingly.
