@@ -29,3 +29,4 @@
 
   - User Type `admin`:
       - `admin`-type accounts can only be created by other `admin`-type accounts.
+      - `admin`-type users have the authority to update and modify the product inventory.
