@@ -18,3 +18,5 @@
 - There are two user types: `admin` and `user`, each with distinct functionalities.
 - Default test users are available:
   - `admin1@admin` with the password `admin123` (`admin` type).
+  - `user1@user` with the password `user123` (`user` type).
+  - `w@w` with the password `123` (`user` type).
