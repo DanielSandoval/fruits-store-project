@@ -28,6 +28,6 @@
     - Complete purchases.
 
   - User Type `admin`:
-      - An initial inventory is automatically established upon initiation. `admin` accounts have the capability to reset the inventory to its default state.
+      - A default product inventory is automatically established upon initiation. `admin` accounts have the capability to reset the inventory to its default state.
       - `admin`-type accounts can only be created by other `admin`-type accounts.
       - `admin`-type users have the authority to update and modify the product inventory.
