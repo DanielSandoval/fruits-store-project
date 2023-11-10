@@ -13,3 +13,8 @@
 - All endpoints require user authentication.
 - Users log in with their email and password.
 - The system identifies the user type (`admin` or `user`) and presents content accordingly.
+
+#### User Types:
+- There are two user types: `admin` and `user`, each with distinct functionalities.
+- Default test users are available:
+-   `admin1@admin` with the password `admin123` (`admin` type).
