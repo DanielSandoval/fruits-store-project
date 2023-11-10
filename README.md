@@ -22,8 +22,8 @@
   - `w@w` with the password `123` (`user` type).
 
 #### User Actions:
-  - User Type `user`:    
-        `User`-type users can interact with the following features:
+  - User Type `user`: 
+      `User`-type users can interact with the following features:
         - Add products to the shopping cart.
         - Clear the shopping cart.
         - Complete purchases.
