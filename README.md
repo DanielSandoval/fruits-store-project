@@ -33,7 +33,7 @@
 
 - User Type `admin`:
   - A default product inventory is automatically established upon initiation. `admin` accounts have the capability to reset the inventory to its default state.
-  - `admin`-type accounts can only be created by other `admin`-type accounts.
+  - `admin` users, upon logging in, have the capability to create additional `admin` user accounts directly from the platform.
   - `admin`-type users have the authority to update and modify the product inventory.
 
 ##### 5. Real-Time Chat Support:
