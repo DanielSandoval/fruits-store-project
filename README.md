@@ -21,6 +21,9 @@
   - `user1@user` with the password `user123` (`user` type).
   - `w@w` with the password `123` (`user` type).
 
+##### 3. Registration:
+- Users can register accounts, and by default, they are registered as 'user' type accounts."
+
 ##### 3. User Actions:
 - User Type `user`:
   - Add products to the shopping cart.
