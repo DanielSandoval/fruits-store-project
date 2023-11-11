@@ -22,7 +22,7 @@
   - `w@w` with the password `123` (`user` type).
 
 ##### 3. Registration:
-- Users can register accounts, and by default, they are registered as 'user' type accounts."
+- Users can register accounts, and by default, they are registered as `user` type accounts.
 
 ##### 3. User Actions:
 - User Type `user`:
