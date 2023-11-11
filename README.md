@@ -23,8 +23,9 @@
 
 ##### 3. Registration:
 - Users can register accounts, and by default, they are registered as `user` type accounts.
+- `admin`-type accounts can only be created by other admin-type accounts.
 
-##### 3. User Actions:
+##### 4. User Actions:
 - User Type `user`:
   - Add products to the shopping cart.
   - Clear the shopping cart.
@@ -35,7 +36,7 @@
   - `admin`-type accounts can only be created by other `admin`-type accounts.
   - `admin`-type users have the authority to update and modify the product inventory.
 
-##### 4. Real-Time Chat Support:
+##### 5. Real-Time Chat Support:
 - A 'Real-Time Chat Support' section is available in the navigation menu, allowing users to engage in live chat for customer service inquiries.
 - Users can access the chat room to communicate with connected users.
 - Users can choose which user to chat with and engage in real-time conversations.
