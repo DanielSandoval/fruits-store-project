@@ -3,7 +3,7 @@ const aboutRouter = express.Router();
 
 aboutRouter.route('')
     .get(function(req, res) {
-        res.render("about");
+        res.render("about", { user: req.user });
     });
 
 module.exports = aboutRouter;

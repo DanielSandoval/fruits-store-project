@@ -24,6 +24,24 @@ input {
     display: grid;
 }
 
+hr#divisor-line-forms {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+h3#demo-title {
+    text-align: center;
+}
+
+form#demo-form {
+    display: grid;
+}
+
+input.demo-button {
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
 @media screen and (max-width: 768px) {
     body {
         grid-template-columns: auto;
@@ -40,6 +58,10 @@ input {
     #buttons-container {
         grid-template-columns: auto;
     }
+
+    form#demo-form {
+        grid-template-columns: auto;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -53,5 +75,13 @@ input {
 
     #buttons-container {
         grid-template-columns: auto auto;
+    }
+
+    form#demo-form {
+        grid-template-columns: repeat(10, auto);
+    }
+
+    input.demo-button {
+        grid-column: 4 / 7;
     }
 }

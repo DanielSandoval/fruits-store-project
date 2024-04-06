@@ -10,13 +10,13 @@
     <br>
     <main>
         <h1>Inventory</h1>
-        <form action="/api/inventory/set-default-data">
+        <form action="/api/inventory/set-default-data" target="_blank">
             <input type="submit" value="Set default inventory">
         </form>
         <br>
         <hr>
         <h3>Edit products</h3>
-        <form action="/api/inventory" method="post">
+        <form action="/api/inventory" method="post" target="_blank">
             <select name="fruit" id="fruits-list">
                 <option selected>Select your option</option>
                 <% if(acceptedFruits) { acceptedFruits.forEach(function(fruit) { %>

@@ -7,7 +7,7 @@
 <body>
     <div class="login-container">
         <h1 id="main-title">Login</h1>
-        <form action="/login" method="post" class="login-form">
+        <form action="/login" method="post" class="login-form" target="_blank">
             <div class="input-text-container">
                 <input type="email" name="username" placeholder="Username (email)" class="input-text">
                 <input type="password" name="password" placeholder="Password" class="input-text">
@@ -17,7 +17,14 @@
                 <input type="submit" name="register" value="Register" form="register-form" class="button">
             </div>
         </form>
-        <form action="/register" method="get" id="register-form"></form>
+        <form action="/register" method="get" id="register-form" target="_blank"></form>
+        <hr width="90%" color="#535650" id="divisor-line-forms" />
+        <h3 id="demo-title">You can try a demo by login as a user already created using one of the buttons below:</h3>
+        <form method="post" id="demo-form">
+            <input type="submit" name="admin" class="demo-button" value="admin1@admin (admin)" formaction="/login/demo?username=admin1@admin">
+            <input type="submit" name="user2" class="demo-button" value="user1@user (user)" formaction="/login/demo?username=user1@user">
+            <input type="submit" name="user1" class="demo-button" value="w@w (user)" formaction="/login/demo?username=w@w">
+        </form>
     </div>
 </body>
 </html>

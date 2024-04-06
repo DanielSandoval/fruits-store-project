@@ -14,13 +14,15 @@
         <br>
     <% }); %>
     <div>
-        <form action="/api/cart-history/submit-payment" method="post">
+        <form action="/api/cart-history/submit-payment" method="post" id="purchase-form-button" target="_blank">
             <input type="submit" name="purchase" value="Purchase">
         </form>
         <br>
-        <form action="/api/cart/delete-cart" method="get">
+        <form action="/api/cart/delete-cart" method="get" target="_blank">
             <input type="submit" name="deleteCart" value="Delete Cart">
         </form>
     </div>
+    <script type="text/javascript" src="/formHandler.js"></script>
+    <script type="text/javascript" src="/cart-submit-payment.js"></script>
 </body>
 </html>

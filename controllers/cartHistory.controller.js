@@ -11,6 +11,12 @@ async function httpPostToCartHistory(req, res) {
     let inventory;
     try {
         let userInfo = await getUserById(user._id);
+        // Check if user cart is empty, if so redirect to /
+        if (!userInfo.userCart.length) {
+            res.setHeader('location', '/');
+            res.statusCode = 302;
+            return res.end();
+        }
         // I need this array sorted because I need to test and compare it with a sorted array
         orderProducts(userInfo.userCart);
         let randomVar = await Promise.all(

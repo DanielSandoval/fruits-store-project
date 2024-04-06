@@ -15,71 +15,70 @@
     <main>
         <h1 class="main-title">FRUITLAND</h1>
         <div class="images-container">
-            <!--<%- include('./partials/buy-product'); %>-->
-            <form action="/api/cart/add-fruit-to-cart/apple" method="post" class="images-form">
+            <form action="/api/cart/add-fruit-to-cart/apple" method="post" class="images-form" id="apple" target="_blank">
                 <div class="image-item">
                     <img src="images/apple.png" class="image-fruit">
                     <input type="submit" class="add-button" value="Add to cart">
                     <input type="number" name="quantity">
                 </div>
             </form>
-            <form action="/api/cart/add-fruit-to-cart/banana" method="post" class="images-form">
+            <form action="/api/cart/add-fruit-to-cart/banana" method="post" class="images-form" id="banana" target="_blank">
                 <div class="image-item">
                     <img src="images/banana.jpg" class="image-fruit">
-                    <input type="submit" class="add-button" value="Add to cart">
+                    <input type="submit" class="add-button" value="Add to cart" id="banana-submit">
                     <input type="number" name="quantity">
                 </div>
             </form>
-            <form action="/api/cart/add-fruit-to-cart/orange" method="post" class="images-form">
+            <form action="/api/cart/add-fruit-to-cart/orange" method="post" class="images-form" id="orange" target="_blank">
                 <div class="image-item">
                     <img src="images/orange.png" class="image-fruit">
                     <input type="submit" class="add-button" value="Add to cart">
                     <input type="number" name="quantity">
                 </div>
             </form>
-            <form action="/api/cart/add-fruit-to-cart/pineapple" method="post" class="images-form">
+            <form action="/api/cart/add-fruit-to-cart/pineapple" method="post" class="images-form" id="pineapple" target="_blank">
                 <div class="image-item">
                     <img src="images/pineapple.jpg" class="image-fruit">
                     <input type="submit" class="add-button" value="Add to cart">
                     <input type="number" name="quantity">
                 </div>
             </form>
-            <form action="/api/cart/add-fruit-to-cart/watermelon" method="post" class="images-form">
+            <form action="/api/cart/add-fruit-to-cart/watermelon" method="post" class="images-form" id="watermelon" target="_blank">
                 <div class="image-item">
                     <img src="images/watermelon.jpg" class="image-fruit">
                     <input type="submit" class="add-button" value="Add to cart">
                     <input type="number" name="quantity">
                 </div>
             </form>
-            <form action="/api/cart/add-fruit-to-cart/strawberry" method="post" class="images-form">
+            <form action="/api/cart/add-fruit-to-cart/strawberry" method="post" class="images-form" id="strawberry" target="_blank">
                 <div class="image-item">
                     <img src="images/strawberry.png" class="image-fruit">
                     <input type="submit" class="add-button" value="Add to cart">
                     <input type="number" name="quantity">
                 </div>
             </form>
-            <form action="/api/cart/add-fruit-to-cart/melon" method="post" class="images-form">
+            <form action="/api/cart/add-fruit-to-cart/melon" method="post" class="images-form" id="melon" target="_blank">
                 <div class="image-item">
                     <img src="images/melon.jpg" class="image-fruit">
                     <input type="submit" class="add-button" value="Add to cart">
                     <input type="number" name="quantity">
                 </div>
             </form>
-            <form action="/api/cart/add-fruit-to-cart/pear" method="post" class="images-form">
+            <form action="/api/cart/add-fruit-to-cart/pear" method="post" class="images-form" id="pear" target="_blank">
                 <div class="image-item">
                     <img src="images/pear.jpg" class="image-fruit">
                     <input type="submit" class="add-button" value="Add to cart">
                     <input type="number" name="quantity">
                 </div>
             </form>
-            <form action="/api/cart/add-fruit-to-cart/grape" method="post" class="images-form">
+            <form action="/api/cart/add-fruit-to-cart/grape" method="post" class="images-form" id="grape" target="_blank">
                 <div class="image-item">
                     <img src="images/grape.jpg" class="image-fruit">
                     <input type="submit" class="add-button" value="Add to cart">
                     <input type="number" name="quantity">
                 </div>
             </form>
-            <form action="/api/cart/add-fruit-to-cart/mango" method="post" class="images-form">
+            <form action="/api/cart/add-fruit-to-cart/mango" method="post" class="images-form" id="mango" target="_blank">
                 <div class="image-item">
                     <img src="images/mango.jpg" class="image-fruit">
                     <input type="submit" class="add-button" value="Add to cart">
@@ -89,5 +88,7 @@
         </div>
     </main>
     <!-- END MAIN -->
+    <script src="/formHandler.js"></script>
+    <script src="/cart-index.js"></script>
 </body>
 </html>
